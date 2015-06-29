@@ -1,5 +1,7 @@
 var CONST = require('../const'),
     EventEmitter = require('eventemitter3'),
+    //scoped reference to global.performance polyfill
+    performance = require('../../polyfill/performance'),
     // Internal event used by composed emitter
     TICK = 'tick';
 
